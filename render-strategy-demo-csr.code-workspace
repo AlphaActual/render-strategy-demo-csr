@@ -5,28 +5,16 @@
       "path": ".",
     },
     {
-      "name": "Next.js SSR",
-      "path": "./SSR/next-app-ssr",
+      "name": "Next.js CSR",
+      "path": "./CSR/next-app-csr",
     },
     {
-      "name": "Next.js ISR",
-      "path": "./ISR/next-app-isr",
+      "name": "Nuxt.js CSR",
+      "path": "./CSR/nuxt-app-csr",
     },
     {
-      "name": "SvelteKit SSR",
-      "path": "./SSR/sveltekit-app-ssr",
-    },
-    {
-      "name": "SvelteKit ISR",
-      "path": "./ISR/sveltekit-app-isr",
-    },
-    {
-      "name": "Nuxt SSR",
-      "path": "./SSR/nuxt-app-ssr",
-    },
-    {
-      "name": "Nuxt ISR",
-      "path": "./ISR/nuxt-app-isr",
+      "name": "SvelteKit CSR",
+      "path": "./CSR/sveltekit-app-csr",
     },
   ],
   "settings": {

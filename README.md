@@ -1,36 +1,39 @@
-# Render Strategy Demo - Monorepo
+# Render Strategy Demo - CSR (Client-Side Rendering)
 
-This is a monorepo demonstrating different rendering strategies with modern web frameworks.
+This repository demonstrates Client-Side Rendering (CSR) implementations with modern web frameworks.
 
 ## Structure
 
-The monorepo is organized by rendering strategy for easy comparison and analysis:
+This repository contains CSR applications built with different frameworks:
 
-### SSR (Server-Side Rendering)
+### CSR (Client-Side Rendering)
 
-- **SSR/next-app-ssr**: Next.js application with Server-Side Rendering
-- **SSR/nuxt-app-ssr**: Nuxt.js application with Server-Side Rendering  
-- **SSR/sveltekit-app-ssr**: SvelteKit application with Server-Side Rendering
+- **CSR/next-app-csr**: Next.js application with Client-Side Rendering
+- **CSR/nuxt-app-csr**: Nuxt.js application with Client-Side Rendering  
+- **CSR/sveltekit-app-csr**: SvelteKit application with Client-Side Rendering
 
-### ISR (Incremental Static Regeneration) ✅
+## What is Client-Side Rendering (CSR)?
 
-- **ISR/next-app-isr**: Next.js application with Incremental Static Regeneration
-- **ISR/nuxt-app-isr**: Nuxt.js application with Incremental Static Regeneration  
-- **ISR/sveltekit-app-isr**: SvelteKit application with Incremental Static Regeneration
+Client-Side Rendering is a web development approach where:
+- The initial HTML page is minimal (just a shell)
+- JavaScript runs in the browser to fetch data and render the content
+- The entire application logic runs on the client side
+- SEO requires additional considerations (like prerendering)
 
-### SSG (Static Site Generation) ✅
+### Benefits of CSR
+- Rich interactive experiences
+- Reduced server load after initial delivery
+- Great for Single Page Applications (SPAs)
+- Smooth transitions between pages
 
-- **SSG/next-app-ssg**: Next.js application with Static Site Generation
-- **SSG/nuxt-app-ssg**: Nuxt.js application with Static Site Generation  
-- **SSG/sveltekit-app-ssg**: SvelteKit application with Static Site Generation
-
-### Future Additions
-
-- **CSR/**: Client-Side Rendering applications
+### Considerations
+- Initial page load can be slower
+- SEO challenges without proper setup
+- JavaScript dependency for functionality
 
 ## Workspace Setup
 
-This monorepo is configured as an npm workspace to enable Vercel's "skipping unaffected projects" feature, which automatically skips builds for unchanged projects in a monorepo.
+This repository is configured as an npm workspace to enable efficient development and deployment optimizations.
 
 ### Requirements Met
 
@@ -43,32 +46,42 @@ This monorepo is configured as an npm workspace to enable Vercel's "skipping una
 ### Available Scripts
 
 ```bash
-# Development - Individual apps
-npm run dev:next     # Start Next.js dev server
-npm run dev:nuxt     # Start Nuxt.js dev server  
-npm run dev:svelte   # Start SvelteKit dev server
+# Development - Individual CSR apps
+npm run dev:next-csr     # Start Next.js CSR dev server
+npm run dev:nuxt-csr     # Start Nuxt.js CSR dev server  
+npm run dev:svelte-csr   # Start SvelteKit CSR dev server
 
-# Development - All SSR apps
-npm run dev:ssr      # Start all SSR apps
+# Development - All CSR apps
+npm run dev:csr          # Start all CSR apps
 
-# Build - Individual apps
-npm run build:next   # Build Next.js app
-npm run build:nuxt   # Build Nuxt.js app
-npm run build:svelte # Build SvelteKit app
+# Build - Individual CSR apps
+npm run build:next-csr   # Build Next.js CSR app
+npm run build:nuxt-csr   # Build Nuxt.js CSR app
+npm run build:svelte-csr # Build SvelteKit CSR app
 
-# Build - All SSR apps
-npm run build:ssr    # Build all SSR apps
+# Build - All CSR apps
+npm run build:csr        # Build all CSR apps
 
 # Install dependencies for all workspaces
 npm install
 ```
 
-### Vercel Configuration
+### Deployment
 
-With this workspace setup, Vercel will:
+With this workspace setup, deployment platforms will:
 - Only build projects that have changed
 - Skip builds for unaffected projects
 - Reduce build queue times
-- Not occupy concurrent build slots for skipped projects
+- Optimize resource usage
 
-Each project can be deployed independently while benefiting from monorepo optimizations.
+Each CSR project can be deployed independently while benefiting from monorepo optimizations.
+
+## Getting Started
+
+1. Clone the repository
+2. Install dependencies: `npm install`
+3. Start development servers: `npm run dev:csr`
+4. Visit the applications:
+   - Next.js CSR: `http://localhost:3000`
+   - Nuxt.js CSR: `http://localhost:3001` 
+   - SvelteKit CSR: `http://localhost:5173`
