@@ -76,12 +76,35 @@ With this workspace setup, deployment platforms will:
 
 Each CSR project can be deployed independently while benefiting from monorepo optimizations.
 
+## Live Demos
+
+The CSR applications from this repository are deployed and available at:
+
+### CSR (Client-Side Rendering)
+
+- **Next.js CSR**: <https://render-strategy-demo-csr-next-app-c.vercel.app/>
+- **Nuxt.js CSR**: <https://render-strategy-demo-csr-nuxt-app-c.vercel.app/>
+- **SvelteKit CSR**: <https://render-strategy-demo-csr-sveltekit.vercel.app/>
+
+### Other Render Strategies (Related Projects)
+
+- **Next.js SSR**: <https://render-strategy-demo-next-app-ssr.vercel.app/>
+- **Next.js SSG**: <https://render-strategy-demo-next-app-ssg.vercel.app/>
+- **Next.js ISR**: <https://render-strategy-demo-next-app-isr.vercel.app/>
+- **Nuxt.js SSR**: <https://render-strategy-demo-nuxt-app-ssr.vercel.app/>
+- **Nuxt.js SSG**: <https://render-strategy-demo-nuxt-app-ssg.vercel.app/>
+- **Nuxt.js ISR**: <https://render-strategy-demo-nuxt-app-isr.vercel.app/>
+- **SvelteKit SSR**: <https://render-strategy-demo-sveltekit-app.vercel.app/>
+- **SvelteKit SSG**: <https://render-strategy-demo-sveltekit-app-nine.vercel.app/>
+- **SvelteKit ISR**: <https://render-strategy-demo-sveltekit-app-rho.vercel.app/>
+
 ## Getting Started
 
 1. Clone the repository
 2. Install dependencies: `npm install`
 3. Start development servers: `npm run dev:csr`
-4. Visit the applications:
-   - Next.js CSR: `http://localhost:3000`
-   - Nuxt.js CSR: `http://localhost:3001` 
-   - SvelteKit CSR: `http://localhost:5173`
+4. Visit the local applications:
+
+   - Next.js CSR: <http://localhost:3000>
+   - Nuxt.js CSR: <http://localhost:3001>
+   - SvelteKit CSR: <http://localhost:5173>

@@ -2,7 +2,7 @@ import tailwindcss from "@tailwindcss/vite";
 
 const cmsDomain = ["https://picsum.photos/"];
 const APP_NAME = "Nuxt App CSR";
-const BASE_APP_URL = "https://render-strategy-demo-nuxt-app-csr.vercel.app"
+const BASE_APP_URL = "https://render-strategy-demo-csr-nuxt-app-c.vercel.app"
 export default defineNuxtConfig({  // Enable pure CSR mode - disable SSR and enable SPA mode
   ssr: false,
     // Nitro configuration for CSR

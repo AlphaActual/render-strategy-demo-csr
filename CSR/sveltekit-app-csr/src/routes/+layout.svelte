@@ -5,11 +5,10 @@
 	import { base } from '$app/paths';
 	import '../app.css';
 
-	let { children } = $props();
-		// App configuration
+	let { children } = $props();		// App configuration
 	const APP_NAME = 'SvelteKit App CSR';
 	const APP_DESCRIPTION = 'A SvelteKit application demonstrating CSR';
-	const BASE_APP_URL = 'https://render-strategy-demo-sveltekit-app.vercel.app';
+	const BASE_APP_URL = 'https://render-strategy-demo-csr-sveltekit.vercel.app';
 	
 	const isErrorPage = $derived($page.url.pathname.startsWith('/error') || $page.status >= 400);
 	
