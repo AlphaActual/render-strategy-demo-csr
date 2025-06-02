@@ -11,7 +11,10 @@ const config = {
 		// Use static adapter for pure CSR deployment
 		adapter: adapter({
 			// Pages will be generated as a single page application
-			fallback: 'index.html'
+			fallback: 'index.html',
+			// Output to public directory for Vercel deployment
+			pages: 'public',
+			assets: 'public'
 		})
 	}
 };
